@@ -199,24 +199,49 @@
             width: 100px;
             height: 100px;
             background: white;
-            border: 6px double rgb(165, 164, 164);
+            border: 6px double rgb(164, 164, 164);
             position: relative;
             margin: auto;
             box-shadow: rgba(0, 0, 0, 0.163) 2px 2px 7px 2px;
         }
         
+        /* Shrunk Updates block to save room */
         .updates {
             width: 80%;
             background-color: white;
             border: 1px solid rgb(165, 164, 164);
-            overflow-y: scroll;
+            overflow-y: auto;
             padding: 5px;
             box-sizing: border-box;
             margin: auto;
-            height: 280px;
+            height: 150px; 
             font-size: 15px;
             text-align: left;
             box-shadow: rgba(0, 0, 0, 0.297) 0px 2px 4px 0cqmax inset;            
+        }
+
+        /* New scrollable stacked container for your stamps */
+        .stamps-box {
+            width: 80%;
+            background-color: white;
+            border: 1px solid rgb(165, 164, 164);
+            overflow-y: auto;
+            padding: 8px;
+            box-sizing: border-box;
+            margin: auto;
+            height: 150px;
+            box-shadow: rgba(0, 0, 0, 0.297) 0px 2px 4px 0cqmax inset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Forces all your tumblr stamps to align and match perfectly */
+        .stamps-box img {
+            width: 90px;
+            height: auto;
+            display: block;
         }
 
         .title {
@@ -260,7 +285,8 @@
                 <th>
                     <div style="margin-left:15px;position: relative;width: max-content;">
                         <a href="">guestbook</a>
-                    </div> </th>
+                    </div> 
+                </th>
                 <th>
                     <div style="margin-left:15px;position: relative;width: max-content;">
                         <a href="">social media</a>
@@ -302,7 +328,9 @@
                     </th>
                 </tr>
             </table>
-        </div> <div class="grid">
+        </div> 
+        
+        <div class="grid">
             <div class="left">
                 <p style="margin-top:0;margin-bottom:0;margin-left:5px;"><b>Sitemap</b></p>
                 <h4><div class="triangle"></div>Header</h4>
@@ -331,58 +359,13 @@
                     <img src="https://64.media.tumblr.com/32d55608f6eb9bd6ceef1b245864bc7d/0e38ed59b096a83f-82/s400x600/7698ae005cada87e69b4dfa465bbab2c12830208.pnj" width="100%">
                 </div>
                 <h4 style="margin-top: 5px;margin-bottom: 5px;margin-left: 5px;">Status</h4>
-                <span style="color:rgb(165, 164, 164);font-size: 15px;">date</span><br>
+                <span style="color:rgb(165, 164, 164);font-size: 15px;">06/11/2026</span><br>
                 <span style="font-size: 15px;">
                     <b>mood:</b> ecstatic <br>
                     <b>currently:</b> building 𑣲⋆｡˚ <br>
                 </span> 
                 <hr>
+                
                 <h4 style="margin-top: 5px;margin-bottom: 5px;margin-left: 5px;">Updates</h4>
                 <div class="updates">
-                    06/11/2026 // I started building this site !! going good so far 
-                </div>
-            </div>
-
-            <div class="right">
-                <div class="title">
-                    <div class="searchbar" style="font-family:kelvinized;">
-                        <img src="https://file.garden/aNy90GYmaWI-Okj1/1486564716-magnifying-glass-search_81527.png" width="15px" alt="search">
-                        about me
-                    </div>
-                </div> <div class="textbox" style="font-family:bellerose;">
-                    hii my name is sam and i use this site as an introduction and as a database for my art and original characters ! i speak french, chinese and english. i'm completely against AI and its usage in art.
-                    <br><br>
-                    medias i like are tmnt, camp camp, bojack horseman, rick and morty, madoka magica and eddsworld !! my favorite colors are pink and blue ^^ im greatly inspired by moe / anime esque art and rendering. i use procreate for illustrations, clipstudio for comics and toonsquid / alightmotion for animations.
-                    <br><br>
-                    you can see my favorite characters, kins yumes etc below !!! ↓
-                </div>
-
-                <div class="stamp-section" style="padding: 10px;">
-                    <img src="https://64.media.tumblr.com/5db366be3d65d02995f2606b5d51791f/81bd1a55f4f9bcd5-47/s100x200/76183a313f290d70d881a84ec863918e77dcbe56.gifv" alt="">
-                    <img src="https://64.media.tumblr.com/6259f2f87c1678cbf2366f32bb04f188/55223de48e4a9df7-04/s250x400/17eddb37edfafc0dcf7421d3a42e310f2e47d7e3.gifv" alt="">
-                    <img src="https://64.media.tumblr.com/bb6cef4ebb2f8faf15d869be6dff7e0e/ab3ef8f0e930dff8-b0/s250x400/600ad9edb1ce6e490379c218d39bff7b33fbc33a.gifv" alt="">
-                    <img src="https://64.media.tumblr.com/c1a5f176d114190b6f11e7d57273cdd1/55223de48e4a9df7-44/s250x400/e2f9408498c7a5f4b28f17dc5c9f3389d825e7b6.gifv" alt="">
-                     <img src="https://64.media.tumblr.com/6b472456ee4c4c5ff2107635f0c8fa76/18b999de0cf0e05e-57/s250x400/7bd999c322ef8508ba7a76dd3c7d7961a1d0a11c.gifv" alt="">
-                    
-                </div>
-
-                <div class="title">
-                    <div class="searchbar">
-                        <img src="https://file.garden/aNy90GYmaWI-Okj1/1486564716-magnifying-glass-search_81527.png" width="15px" alt="search">
-                        Title 2 
-                    </div>
-                </div>   
-                <div class="textbox">
-                    add in your webrings, buttons, chatbox etc
-                </div>              
-            </div>
-
-            <div class="footer">
-                <div style="background: linear-gradient(#eff2f2,#cdcccc,#a2a3a3);height:45px;border-radius: 0px 0px 9px 9px;padding:8px;box-sizing: border-box;width:100%;font-size:12px;">
-                    credits: coded by <a href="https://ol1vi4s-corner.neocities.org">ol1vi4s-corner</a> // <a href="https://www.fancyparts.com/fancyparts/pattern.html">header background</a> // do NOT remove 
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+                    06/11/2026 // I started building this site !! going good so far
