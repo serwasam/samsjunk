@@ -1,11 +1,361 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My OC Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert webpage title here</title>
 </head>
-
+<style>
+.body::-webkit-scrollbar {
+display: none;
+}
+::-webkit-scrollbar {
+width: 15px;
+}
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 5px;
+}
+ ::-webkit-scrollbar-thumb {
+background:linear-gradient(to right, #b2ceeb, #73a8e0, #5494d8,#73a8e0,#a1c6ef );
+border-radius: 7px;
+border: 1px rgba(128, 128, 128, 0.73) solid;
+}
+ 
+a{
+color: #5b9bdf;
+}
+th{
+font-weight: normal;
+padding: 0%;
+width: fit-content;
+}
+body{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+background-image: url('https://file.garden/aNy90GYmaWI-Okj1/os-x-cheetah-blue-3840x2160-24084.jpg');
+background-size:fill;
+margin: 0;
+font-size: 20px;
+color: black;
+}
+.header{
+width: 100%;
+background-color: rgba(237, 237, 237, 0.894);
+position: sticky;
+height:25px;
+background-image: url('https://www.fancyparts.com/fancyparts/cg/pattern/strip_01/strip_01_310.gif');
+color: black;
+}
+ 
+.main{
+width: 1000px;
+height:700px;
+margin-top:40px;
+position:relative;
+margin-bottom: 100px;
+margin-left:auto;
+margin-right:auto;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+border: 1px solid #ffffff00;
+border-radius: 9px;
+}
+.grid{
+display: grid;
+grid-template-rows:8fr 1fr;
+grid-template-columns: 1fr 2fr 4fr;
+margin-top:20px;
+width:1000px;
+margin-left:-8px;
+ 
+}
+.left{
+grid-column: 1;
+grid-row: 1;
+background-color: #e5e8ea;
+height:600px;
+ 
+}
+.center{
+grid-column: 2;
+grid-row: 1;
+background-color: #ededed;
+height:600px;
+padding:10px;
+box-sizing: border-box;
+text-align:center;
+}
+.right{
+grid-column: 3;
+grid-row:1;
+background-color:rgb(244, 244, 244);
+height:600px;
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+overflow-y: auto;
+}
+.footer{
+grid-column-start: 1;
+grid-column-end:4;
+grid-row:2;
+}
+</style>
 <body>
-<h1>Welcome!</h1>
-<p>This is my OC archive.</p>
+    <div class="header">
+        <style>
+        .header a{
+        text-decoration: none;
+        color:black;
+        }
+        .header a:hover{
+        background:linear-gradient(#8cbcef, #5b9bdf, #5494d8,#5b9bdf,#8cbcef );
+        color: white;
+        }
+        </style>
+        <table style="width:200px;height:100%;position: relative;float:left;">
+            <tr>
+            <th>
+            <!-- feel free to change link names -->
+            <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="applelogo" style="width:20px;margin-left: 5px;">
+            </th>
+            <th>
+            <b>Out</b>
+            </th>
+            <th>
+            <div style="margin-left:15px;position: relative;width: max-content;">
+                <a href="">guestbook</a>
+            </th>
+            <th>
+            <div style="margin-left:15px;position: relative;width: max-content;">
+                <a href="">social media</a>
+            </div>
+            </th>  
+            <th>              
+            <div style="margin-left:15px;position: relative;width: max-content;">
+                <a href="">neocities profile</a>
+            </div>
+            </th> 
+            </tr>
+        </table> 
+        <div style="float:right;position:relative;margin-top:0px;">
+            <p id="day" style="margin-top:2px;float:left;"></p> &nbsp; <p id="txt2" style="margin-top:2px;float:right;"></p>
+            <script>
+                const weekday = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+ 
+                const d = new Date();
+                let day = weekday[d.getDay()];
+                document.getElementById("day").innerHTML = day;
+            </script>
+            <script>
+                var today=new Date();
+                var h=today.getHours();
+                var m=today.getMinutes();
+                document.getElementById('txt2').innerHTML=h+":"+m;
+            </script>
+        </div>
+   </div>
+   <div class="main">
+    <div style="background: linear-gradient(#eff2f2,#cdcccc,#a2a3a3);height:40px;border-radius: 9px 9px 0px 0px;padding:8px;">
+    <table style="width:100%;">
+    <tr>
+    <th>
+    <style>
+        .sphere1{
+        border-radius: 50%;
+        background: linear-gradient(#ffe0e0, #ff9191, #fb3e3e, #ff9191, #ffe0e0);
+        border:1px #980f0f solid;
+        width:20px;
+        height:20px;
+        position:relative;
+        float:left;
+        margin-right: 5px;
+        }
+        .sphere2{
+        border-radius: 50%;
+        background: linear-gradient(#fcf9ec, #feec81, #fbdf3e, #feec81, #fcf9ec);
+        border:1px #bca524 solid;
+        width:20px;
+        height:20px;
+        position:relative;
+        float:left; 
+        margin-right: 5px;     
+        }
+        .sphere3{
+        border-radius: 50%;
+        background: linear-gradient(#eaffe6, #acfd9a, #52e032, #acfd9a, #eaffe6);
+        border:1px #7db73e solid;
+        width:20px;
+        height:20px;
+        position:relative;
+        float:left;        
+        }
+    </style>
+    <div class="sphere1"></div>  <div class="sphere2"></div> <div class="sphere3"></div>
+    </div>
+    </th>
+    <th style="float:right;">
+        yourwebsite.neocities.org
+    </th>
+ 
+    </tr>
+    </table>
+        <div class="grid">
+            <!--navigation-->
+           <div class="left">
+            <style>
+                .left h4{
+                color:grey;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+                }
+                .left a{
+                color:black;
+                text-decoration: none;
+                }
+                .left ul{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                border-top:#989797 1px solid;
+                border-bottom: #c1c0c0 1px solid;
+                }
+                .left ul:hover{
+                background:linear-gradient(#8cbcef, #5b9bdf, #5494d8,#5b9bdf,#8cbcef )
+                }
+                .triangle {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-width: 0 8px 13px 8px;
+                border-color: transparent transparent #989797 transparent;
+                transform: rotate(90deg);
+                position: relative;
+                float:left;
+                margin-top:5px;
+                }
+ 
+            </style>
+            <p style="margin-top:0;margin-bottom:0;margin-left:5px;"><b>Sitemap</b></p>
+            <h4><div class="triangle"></div>Header</h4>
+                <ul><a href="">link</a></ul>
+                <ul><a href="">link</a></ul>
+                <ul><a href="">link</a></ul>
+ 
+            <h4><div class="triangle"></div>Header</h4>
+                <ul><a href="">link</a></ul>
+                <ul><a href="">link</a></ul>
+                <ul><a href="">link</a></ul>
+            
+            <h4><div class="triangle"></div>Header</h4>
+                <ul><a href="">link</a></ul>
+                <ul><a href="">link</a></ul>
+                <ul><a href="">link</a></ul>
+ 
+            <h4><div class="triangle"></div>Header</h4>
+                <ul><a href="">link</a></ul>
+                <ul><a href="">link</a></ul>
+                <ul><a href="">link</a></ul>
+           </div> 
+           <!--status and updates-->
+           <div class="center">
+            <style>
+            .icon{
+            width:100px;
+            height:100px;
+            background:white;
+            border:6px double rgb(165, 164, 164);
+            position: relative;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.163) 2px 2px 7px 2px;
+            }
+            .updates{
+            width:80%;
+            background-color:white;
+            border: 1px solid rgb(165, 164, 164);
+            overflow-y: scroll;
+            padding:5px;
+            box-sizing: border-box;
+            margin: auto;
+            height:280px;
+            font-size: 15px;
+            text-align: left;
+            box-shadow: rgba(0, 0, 0, 0.297) 0px 2px 4px 0cqmax inset;            
+            }
+            </style>
+            <div class="icon">
+                <img src="https://64.media.tumblr.com/32d55608f6eb9bd6ceef1b245864bc7d/0e38ed59b096a83f-82/s400x600/7698ae005cada87e69b4dfa465bbab2c12830208.pnj" width="100%">
+            </div>
+            <h4 style="margin-top: 5px;margin-bottom: 5px;margin-left: 5px;">Status</h4>
+            <span style="color:rgb(165, 164, 164);font-size: 15px;">date</span><br>
+            <span style="font-size: 15px;">
+                <b>mood:</b> happy <br>
+                <b>currently:</b> activity <br>
+                <b></b>
+            </span> 
+            <hr>
+            <!--feel free to use this for purposes other than updates-->
+            <h4 style="margin-top: 5px;margin-bottom: 5px;margin-left: 5px;">Updates</h4>
+            <div class="updates">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            </div>
+            <!--main content-->
+            <div class="right">
+                <style>
+                    .title{
+                    width: 100%;
+                    height:fit-content;
+                    background-color: #ccd5dcbd;
+                    padding:5px;
+                    box-sizing: border-box;
+                    font-weight: bold;
+                    }
+                    .searchbar{
+                    width:80%;
+                    height:25px;
+                    padding:5px;
+                    border: 1px grey solid;
+                    border-radius: 15px;
+                    background-color: white;
+        
+                    }
+                    .textbox{
+                    width:90%;
+                    margin-left:auto;
+                    margin-right: auto;
+                    margin-top:10px;
+                    margin-bottom: 10px;
+                    height:auto;
+                    }
+                </style>
+                <div class="title">
+                   <div class="searchbar">
+                    <img src="https://file.garden/aNy90GYmaWI-Okj1/1486564716-magnifying-glass-search_81527.png" width="15px" alt="search">
+                    Title 1 
+                    </div> 
+                </div>
+                <div class="textbox">
+                    layout is <i>not mobile friendly!</i> <br>
+                    feel free to alter the code, but <b>do not remove the credits </b>if you retain more than 50% ~ of the original code <br><br>
+                    if there are any bugs or issues please contact me on my neocities profile.
+                </div>
+                <div class="title">
+                   <div class="searchbar">
+                    <img src="https://file.garden/aNy90GYmaWI-Okj1/1486564716-magnifying-glass-search_81527.png" width="15px" alt="search">
+                    Title 2 
+                    </div>
+                </div>   
+                <div class="textbox">
+                    add in your webrings, buttons, chatbox etc
+                </div>             
+            </div>
+            <div class="footer">
+                <div style="background: linear-gradient(#eff2f2,#cdcccc,#a2a3a3);height:45px;border-radius: 0px 0px 9px 9px;padding:8px;box-sizing: border-box;width:100%;font-size:12px;">
+                    credits: coded by <a href="https://ol1vi4s-corner.neocities.org">ol1vi4s-corner</a> // <a href="https://www.fancyparts.com/fancyparts/pattern.html">header background</a> // do NOT remove 
+                </div>
+            </div>
+            </div>
+           </div>
+        </div>
+ 
 </body>
 </html>
