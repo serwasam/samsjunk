@@ -1,23 +1,3 @@
-<div class="right">
-    <style>...</style>
-    <div class="title">
-        <div class="searchbar">...</div>
-    </div>
-</div> ```
-
-### 2. The Unclosed Window Title Bar
-The `<div>` styling the grey window title bar (where your spheres and `yourwebsite.neocities.org` are) never closes, which traps your entire `.grid` container inside a `40px` tall box.
-
-### 3. Missing `</div>` in the Header Navigation
-Your "guestbook" link opens a `<div>` but closes with a `</th>` without closing the div first.
-
----
-
-### The Fixed Code
-
-Here is your fully corrected, clean layout. Replace your entire file with this, and your updates will start working properly:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -381,6 +361,9 @@ Here is your fully corrected, clean layout. Replace your entire file with this, 
                     <img src="https://64.media.tumblr.com/5db366be3d65d02995f2606b5d51791f/81bd1a55f4f9bcd5-47/s100x200/76183a313f290d70d881a84ec863918e77dcbe56.gifv" alt="">
                     <img src="https://64.media.tumblr.com/6259f2f87c1678cbf2366f32bb04f188/55223de48e4a9df7-04/s250x400/17eddb37edfafc0dcf7421d3a42e310f2e47d7e3.gifv" alt="">
                     <img src="https://64.media.tumblr.com/bb6cef4ebb2f8faf15d869be6dff7e0e/ab3ef8f0e930dff8-b0/s250x400/600ad9edb1ce6e490379c218d39bff7b33fbc33a.gifv" alt="">
+                    <img src="https://64.media.tumblr.com/c1a5f176d114190b6f11e7d57273cdd1/55223de48e4a9df7-44/s250x400/e2f9408498c7a5f4b28f17dc5c9f3389d825e7b6.gifv" alt="">
+                     <img src="https://64.media.tumblr.com/6b472456ee4c4c5ff2107635f0c8fa76/18b999de0cf0e05e-57/s250x400/7bd999c322ef8508ba7a76dd3c7d7961a1d0a11c.gifv" alt="">
+                    
                 </div>
 
                 <div class="title">
